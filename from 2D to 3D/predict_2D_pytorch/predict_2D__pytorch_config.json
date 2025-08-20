@@ -1,0 +1,27 @@
+
+
+{
+ "box path" : "/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/inference_datasets/cropped_dataset.h5",
+"wings detection model path" : "/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/utils/wings segmentation models/yolo_weights_6_1_24.pt",
+"wings pose estimation model path" : "/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/training network/pytorch/models/MODEL_18_POINTS_PER_WING_Mar 17_02/best_model.pth",
+"wings pose estimation model path second path": "/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/training network/pytorch/models/ALL_CAMS_18_POINTS_Mar 17_05/best_model.pth",
+ "head tail pose estimation model path": "",
+ "base output path": "/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/from 2D to 3D/example datasets/mov10_u",
+
+
+"number of cameras": 4,
+"number of time channels": 3,
+"model type": "WINGS_AND_BODY_SAME_MODEL",
+"model type second pass": "WINGS_AND_BODY_SAME_MODEL",
+"mask increase initial": 1,
+"mask increase reprojected": 1,
+"is video": 1,
+"batch size": 8,
+"body parts to predict": "WINGS_AND_BODY",
+"number of joints": 18,
+"predict again using reprojected masks": 1,
+"calibration data path": "/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/from 2D to 3D/calibration file/calibration file.h5",
+"align right left": 0,
+"IMAGE_HEIGHT": 800,
+"IMAGE_WIDTH": 1280
+}

@@ -1,0 +1,31 @@
+
+
+{
+ "software": "tensorflow",
+
+ "box path" : "/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/inference_datasets/movie_full/cropped/movie_1_10_4410_ds_3tc_7tj-cropped.h5",
+"wings detection model path" : "/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/utils/wings segmentation models/yolo_weights_6_1_24.pt",
+"wings pose estimation model path" : "/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/models/MODEL_18_POINTS_PER_WING_Apr 28_01/best_model.keras",
+"wings pose estimation model path second path": "/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/from 2D to 3D/models 5.0/4 cameras/ALL_CAMS_18_POINTS_Jun 09/best_model.h5",
+ "head tail pose estimation model path": "",
+ "base output path": "/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/from 2D to 3D/example datasets/mov10_u",
+
+
+"number of cameras": 4,
+"number of time channels": 3,
+"model type": "WINGS_AND_BODY_SAME_MODEL",
+"model type second pass": "ALL_CAMS_ALL_POINTS",
+"mask increase initial": 1,
+"mask increase reprojected": 1,
+"is video": 1,
+"batch size": 8,
+"body parts to predict": "WINGS_AND_BODY",
+"number of joints": 18,
+"predict again 3D consistent": 0,
+"use reprojected masks": 0,
+"2D to 3D config path": "/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/from 2D to 3D/2D_to_3D_config.json",
+"calibration data path": "/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/from 2D to 3D/calibration file/calibration file.h5",
+"align right left": 0,
+"IMAGE_HEIGHT": 800,
+"IMAGE_WIDTH": 1280
+}
