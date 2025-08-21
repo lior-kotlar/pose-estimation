@@ -85,8 +85,7 @@ def cropfile(path):
 
 
 
-def cropmovie(path):
-    cropped_movie_length_in_frames = 151
+def cropmovie(path, cropped_movie_length_in_frames):
     newfoldername = 'cropped'
     directory = os.path.dirname(path)
     newfolderpath = os.path.join(directory, newfoldername)
@@ -123,7 +122,19 @@ def main():
     elif action == 'c':
         cropfile(path)
     elif action == 'cm':
-        cropmovie(path)
+        if len(sys.argv) < 4:
+            print("Please provide the number of frames to crop.")
+            exit(1)
+        else:
+            try:
+                cropped_movie_length_in_frames = int(sys.argv[3])
+            except ValueError:
+                print("Invalid number of frames provided.")
+                exit(1)
+            if cropped_movie_length_in_frames <= 0:
+                print("Number of frames must be a positive integer.")
+                exit(1)
+        cropmovie(path, cropped_movie_length_in_frames)
 
 
 if __name__ == '__main__':
