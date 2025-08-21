@@ -5,7 +5,7 @@ import os
 import matplotlib.pyplot as plt
 
 
-path = "/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/training_datasets/random_trainset_201_frames_18_joints.h5"
+path = "/cs/labs/tsevi/lior.kotlar/pose-estimation/training_datasets/random_trainset_201_frames_18_joints.h5"
 if not os.path.exists(path):
     print("file doesen't exist")
     exit(1)
@@ -35,7 +35,7 @@ def read_data_file_for_inference():
 
 
 def crop_dataset():
-    cropped_file_path = "C:\\Users\\lior.kotlar\\Documents\\Lior Studies\\Lab\\amitai-s-thesis\\inference_datasets\\cropped_dataset.h5"
+    cropped_file_path = "C:\\Users\\lior.kotlar\\Documents\\Lior Studies\\Lab\\pose-estimation\\inference_datasets\\cropped_dataset.h5"
     crop_size = 8
     with h5py.File(path, "r") as originalfile:
         with h5py.File(cropped_file_path, "w") as cropped_file:

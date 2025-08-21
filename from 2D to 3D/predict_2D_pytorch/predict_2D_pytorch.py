@@ -530,6 +530,6 @@ class Predictor2D:
 
 
 if __name__ == "__main__":
-    config_path = r"/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/from 2D to 3D/predict_2D_pytorch/predict_2D__pytorch_config.json"
+    config_path = r"/cs/labs/tsevi/lior.kotlar/pose-estimation/from 2D to 3D/predict_2D_pytorch/predict_2D__pytorch_config.json"
     predictor = Predictor2D(config_path)
     predictor.run_predict_2D()

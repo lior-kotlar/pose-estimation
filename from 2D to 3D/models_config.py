@@ -228,10 +228,10 @@ def config_8_4(config):
 
 
 # models 5.0
-models_path = '/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/from 2D to 3D/models 5.0/'
+models_path = '/cs/labs/tsevi/lior.kotlar/pose-estimation/from 2D to 3D/models 5.0/'
 def config_1_5(config):
     # 3 good cameras 1
-    config["wings pose estimation model path"] = "/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/models/MODEL_18_POINTS_PER_WING_Apr 28_01/best_model.keras"
+    config["wings pose estimation model path"] = "/cs/labs/tsevi/lior.kotlar/pose-estimation/models/MODEL_18_POINTS_PER_WING_Apr 28_01/best_model.keras"
     config["model type"] = "WINGS_AND_BODY_SAME_MODEL"
     config["predict again 3D consistent"] = 0
     return config
@@ -239,7 +239,7 @@ def config_1_5(config):
 
 def config_2_5(config):
     # 3 good cameras 1
-    config["wings pose estimation model path"] = f"/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/models/MODEL_18_POINTS_PER_WING_Jul 07/best_model.keras"
+    config["wings pose estimation model path"] = f"/cs/labs/tsevi/lior.kotlar/pose-estimation/models/MODEL_18_POINTS_PER_WING_Jul 07/best_model.keras"
     config["model type"] = "WINGS_AND_BODY_SAME_MODEL"
     config["predict again 3D consistent"] = 0
     return config
@@ -247,7 +247,7 @@ def config_2_5(config):
 
 def config_3_5(config):
     # 3 good cameras 2
-    config["wings pose estimation model path"] = f"/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/models/MODEL_18_POINTS_3_GOOD_CAMERAS_Jul 09/weights/weights.050-0.000085914.keras"
+    config["wings pose estimation model path"] = f"/cs/labs/tsevi/lior.kotlar/pose-estimation/models/MODEL_18_POINTS_3_GOOD_CAMERAS_Jul 09/weights/weights.050-0.000085914.keras"
     config["model type"] = "WINGS_AND_BODY_SAME_MODEL"
     config["predict again 3D consistent"] = 0
     return config

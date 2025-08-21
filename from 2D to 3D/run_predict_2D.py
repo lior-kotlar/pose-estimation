@@ -306,7 +306,7 @@ class Flight3DProcessing:
 
     @staticmethod
     def predict_and_analyze_directory(base_path,
-                                      config_path=r"/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/from 2D to 3D/predict_2D_config.json",
+                                      config_path=r"/cs/labs/tsevi/lior.kotlar/pose-estimation/from 2D to 3D/predict_2D_config.json",
                                       already_predicted_2D=True, calibration_path="",
                                       only_create_mp4=False):
         Flight3DProcessing.predict_all_movies(base_path,
@@ -369,8 +369,8 @@ def run_predict_directory():
                                                          already_predicted_2D=already_predicted_2D,
                                                          only_create_mp4=only_create_mp4)
     else:
-        base_path = r"/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/inference_datasets/mov29/cropped"
-        calibration_path = r"/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/inference_datasets/mov29/calibration file.h5"
+        base_path = r"/cs/labs/tsevi/lior.kotlar/pose-estimation/inference_datasets/mov29/cropped"
+        calibration_path = r"/cs/labs/tsevi/lior.kotlar/pose-estimation/inference_datasets/mov29/calibration file.h5"
         Flight3DProcessing.predict_and_analyze_directory(base_path,
                                                          calibration_path=calibration_path,
                                                          already_predicted_2D=already_predicted_2D,

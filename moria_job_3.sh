@@ -9,13 +9,13 @@
 
 echo "started"
 
-cd /cs/labs/tsevi/lior.kotlar/amitai-s-thesis
+cd /cs/labs/tsevi/lior.kotlar/pose-estimation
 echo "activating environment"
-source /cs/labs/tsevi/lior.kotlar/amitai-s-thesis/trainenv/bin/activate
+source /cs/labs/tsevi/lior.kotlar/pose-estimation/trainenv/bin/activate
 
 echo "run python"
 
-/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/trainenv/bin/python3.11 /cs/labs/tsevi/lior.kotlar/amitai-s-thesis/training_network/tensorflow/train.py "/cs/labs/tsevi/lior.kotlar/amitai-s-thesis/training network/configurations/MODEL_18_POINTS_3_GOOD_CAMERAS/configuration_short.json"
+/cs/labs/tsevi/lior.kotlar/pose-estimation/trainenv/bin/python3.11 /cs/labs/tsevi/lior.kotlar/pose-estimation/training_network/tensorflow/train.py "/cs/labs/tsevi/lior.kotlar/pose-estimation/training network/configurations/MODEL_18_POINTS_3_GOOD_CAMERAS/configuration_short.json"
 
 echo "finished working"
 
