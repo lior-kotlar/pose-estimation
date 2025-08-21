@@ -76,7 +76,6 @@ class Flight3DProcessing:
                 if os.path.isfile(points_3D_file):
                     points_3D_file_list.append(points_3D_file)
         all_points_arrays = [np.load(array_path) for array_path in all_points_file_list]
-        points_3D_arrays = [np.load(array_path)[:, :, np.newaxis, :] for array_path in points_3D_file_list]
         big_array_all_points = np.concatenate(all_points_arrays, axis=2)
         return big_array_all_points, all_points_arrays
 

@@ -1203,7 +1203,6 @@ class Predictor2D:
             # Reshape
             confmaps = np.transpose(confmaps, (0, 3, 2, 1))
         else:
-            shape = model_peaks.input.shape
             Ypk = model_peaks.predict(X, batch_size=batch_size)
         return Ypk, confmaps, confmaps_min, confmaps_max
 
